@@ -10,3 +10,7 @@ app.use(jsonBodyMiddleWare);
 
 app.use("/users", usersRouter);
 app.use("/__test__", testsRouter);
+
+app.get("/", (req, res) => {
+  res.send("Hello, world");
+});
