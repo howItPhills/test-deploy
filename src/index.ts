@@ -1,7 +1,7 @@
 import { app } from "./app";
 import { runDb } from "./db/db.mongodb";
 
-const port = 3003;
+const port = process.env.PORT || 3003;
 
 const launchApp = async () => {
   await runDb();
